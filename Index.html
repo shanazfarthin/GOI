@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leadership Beyond Limits</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg"> <!-- Optional Favicon -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      
+    </header>
+
+    <section id="tile1" class="tile">
+      <h2 id="leadership-title">Leadership Beyond Limits</h2>
+
+      <h3>Welcome & Learning Objectives</h3>
+  <ul>
+    <li>Explore how setting impossible goals drives innovation and transformation</li>
+    <li>Understand adaptive and legacy-focused leadership principles</li>
+    <li>Analyze different political and corporate leadership models globally</li>
+    <li>Reflect on communication's role in building trust and leadership effectiveness</li>
+    <li>Evaluate key leadership challenges and strategies to overcome them</li>
+  </ul>
+ 
+      <button class="start-btn" onclick="nextTile(2)">Start Learning</button>
+
+    </section>
+
+    <section id="tile2" class="tile hidden">
+      <h2>The Game of Impossible</h2>
+        <p class="summary">Discover how impossible goals inspire adaptive leadership and innovation.</p>
+        <div class="details">
+          <p><strong>Key Insight:</strong> Impossible goals force transformation and creativity.</p>
+          <p><strong>Example:</strong> Idris Jala turned around Malaysian Airlines with this mindset.</p>
+          <p><strong>Reflection:</strong> What’s your own “impossible” goal, and how can you break it down into bold but actionable steps?</p>
+        </div>
+      <button onclick="nextTile(3)">Next</button>
+    </section>
+    
+
+    <section id="tile3" class="tile hidden">
+      <h2> Rethinking Political Leadership</h2>
+        <p class="summary">Understand the meritocratic leadership model in China and its parallels to corporate leadership.</p>
+        <div class="details">
+          <p><strong>Key Insight:</strong> China's leadership model mirrors corporate succession—based on merit, not popularity.</p>
+          <p><strong>Challenge:</strong> Western democracies often elect leaders without proven performance history.</p>
+          <p><strong>Reflection:</strong> Should public leadership be more like corporate leadership in its selection process?</p>
+        </div>
+      
+      <button onclick="nextTile(4)">Next</button>
+    </section>
+
+    <section id="tile4" class="tile hidden">
+      <h2>Legacy Thinking and Deep Leadership</h2>
+        <p class="summary">Explore long-term leadership that prioritizes legacy and roots over popularity.</p>
+        <div class="details">
+          <p><strong>Key Insight:</strong> True leadership looks far beyond one’s own timeline.</p>
+          <p><strong>Quote:</strong> “Don’t polish your leaves; fertilize your roots.”</p>
+          <p><strong>Reflection:</strong> What legacy are you building? Are you being seduced by popularity or rooted in purpose?</p>
+        </div>
+      <button onclick="nextTile(5)">Next</button>
+    </section>
+    <section id="tile5" class="tile hidden">
+ 
+  <video width="100%" controls poster="images/thumbnail.jpg">
+    <source src="images/bribe.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <button onclick="nextTile(6)">Next</button>
+</section>
+
+    <section id="tile6" class="tile hidden">
+     <h2>China vs Western Leadership Models</h2>
+      <p><strong>China:</strong> Merit-based, performance-driven.</p>
+      <p><strong>West:</strong> Electoral, campaign-focused.</p>
+      <p>China lifted 600M from poverty — the "human miracle".</p>
+      
+      <button onclick="nextTile(7)">Next</button>
+    </section>
+
+    <section id="tile7" class="tile hidden">
+       <h2>Challenges Leaders Face</h2>
+      <ul>
+        <li>Unprepared entry into office</li>
+        <li>Overpromising and under-delivering</li>
+        <li>Confusion over "True North" goals</li>
+        <li>Firefighting over strategic planning</li>
+      </ul>
+     
+      <button onclick="nextTile(8)">Next</button>
+    </section>
+    <section id="tile8" class="tile hidden">
+  
+  <video width="100%" controls poster="images/thumbnail.jpg">
+    <source src="images\win.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <button onclick="nextTile(9)">Next</button>
+</section>
+
+      <section id="tile9" class="tile hidden">
+      <h2>Randomized Quiz</h2>
+      <div id="quiz-container"></div>
+      <p id="quiz-feedback"></p>
+      <button onclick="submitQuiz()">Submit Quiz</button>
+      <button id="retry-btn" class="hidden" onclick="retryQuiz()">Retry Quiz</button>
+      <button id="quiz-next-btn" class="hidden" onclick="nextTile(10)">Next</button>
+    </section>
+    
+
+    <!-- TILE 8: Quiz Score Tile -->
+    <section id="tile10" class="tile hidden">
+      <h2>Quiz Results</h2>
+      <p id="score-result"></p>
+      <p>To successfully complete the course, you must score 85% or higher.</p>
+      <button onclick="nextTile(11)">Next</button>
+    </section>
+
+    <!-- TILE 9: Final Reflection -->
+    <section id="tile11" class="tile hidden">
+      <h2>Final Reflection</h2>
+      <p>“Don’t polish the leaves—fertilize the roots.”</p>
+      <label for="reflection">Your legacy goal:</label>
+      <textarea id="reflection" rows="4" cols="50"></textarea>
+      <button onclick="submitReflection()">Submit</button>
+      <p id="reflection-output"></p>
+      <div id="resources-link" class="hidden">
+        <button onclick="nextTile(12)">Next</button>
+      </div>
+    </section>
+
+    <!-- TILE 10: Resources -->
+    <section id="tile12" class="tile hidden">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=vkTgftXtA0k" target="_blank">Podcast: The Game of Impossible</a></li>
+      <li><a href="docs/Leadership%20Beyond%20Limits.pdf" target="_blank" download>Leadership Development PDF</a></li>
+      </ul>
+      <button onclick="nextTile(13)">Next</button>
+    </section>
+
+    <!-- TILE 11: Completion -->
+    <section id="tile13" class="tile hidden">
+      <h2>Course Completed 🎉</h2>
+      <p>Thank you for participating in <strong>Leadership Beyond Limits</strong>.</p>
+      <p>We hope you are inspired to pursue transformational leadership in your own journey.</p>
+      <p><em><strong>“Fertilize the roots, don’t just polish the leaves”</strong></em></p>
+    </section>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
